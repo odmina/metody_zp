@@ -17,8 +17,8 @@ lab02_charakterystyka
 lab02_charakterystyka_ilosc
 średnia-arytmetyczna-i-odchylenie-standardowe
 mediana-i-rozstęp-ćwiartkowy
+moda-dominanta
+prezentacja-graficzna
 lab02_charakterystyka_kat
 zmienne-porządkowe
 zmienne-nominalne
-moda
-proporcje-i-odsetki

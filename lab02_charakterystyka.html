@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym</title>
   <meta name="description" content="2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym" />
-  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Małgorzata Basińska" />
 
 
-<meta name="date" content="2026-03-11" />
+<meta name="date" content="2026-03-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
 <div id="lab02_charakterystyka_ilosc" class="section level3 hasAnchor" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Statystyki opisowe dla zmiennych ilościowych<a href="lab02_charakterystyka.html#lab02_charakterystyka_ilosc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="średnia-arytmetyczna-i-odchylenie-standardowe" class="section level4 hasAnchor" number="2.2.1.1">
-<h4><span class="header-section-number">2.2.1.1</span> Średnia (arytmetyczna) i odchylenie standardowe<a href="#%C5%9Brednia-arytmetyczna-i-odchylenie-standardowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4><span class="header-section-number">2.2.1.1</span> Średnia (arytmetyczna) i odchylenie standardowe<a href="lab02_charakterystyka.html#średnia-arytmetyczna-i-odchylenie-standardowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="box">
 <p>Załóżmy, że mamy następujący <span class="math inline">\(n\)</span> elementowy zbiór <span class="math inline">\(X = {3, 5, 7, 9, 1, 3}\)</span>. Każdy z elementów tego zbioru można oznaczyć symbolem <span class="math inline">\(x_i\)</span>, gdzie <span class="math inline">\(i\)</span> mieści się w zakresie od <span class="math inline">\(1\)</span> do <span class="math inline">\(n\)</span>, a więc: <span class="math inline">\(x_1 = 3, x_2=5, x_3=7\)</span> itd.</p>
 <p>Wyrażenie <span class="math inline">\(\sum_{i=1}^{n} x_i\)</span> będzie oznaczało sumę wszystkich elementów zbioru <span class="math inline">\(X\)</span>.</p>
@@ -163,10 +163,10 @@ div.csl-indent {
 <p>Po operatorze sumowania <span class="math inline">\(\sum_{i=1}^{n}\)</span> możemy wpisać dowolne działanie. Będzie to oznaczało “weź każdy z elementów zbioru <span class="math inline">\(X\)</span> osobno, wykonaj na nim podane po operatorze sumowania działanie i dodaj wszystkie wyniki tych działań.”</p>
 </div>
 <p>Dla każdego zbioru obserwacji zmiennej ilościowej, możemy obliczyć średnią wartość obserwacji, tzw. Średnią z próby (średnią dla zbadanych osób) będziemy oznaczać symbolem <span class="math inline">\(\bar{x}\)</span>. Wzór:</p>
-<p><span class="math display">\[\bar{x}= \frac{1}{n}(\sum_{i=1}^{n} x_i).\]</span></p>
+<p><span class="math display">\[\bar{x}= \frac{1}{n}\sum_{i=1}^{n} x_i.\]</span></p>
 <p><strong>Średnia</strong> ma kilka ciekawych właściwości. Po pierwsze, jeżeli obliczycie średnią dla danego zbioru obserwacji, to nie ma gwarancji, że wartość średnia znajduje się wśród zaobserwowanych wartości (jak w powiedzeniu: “ja i mój pies mamy średnio trzy nogi”). Jednocześnie jeżeli obliczycie sumę odległości poszczególnych obserwacji od średniej i od jakiejś innej wartości, to suma odległości obserwacji od średniej zawsze będzie mniejsza! Dla zmiennych dyskretnych, jeżeli pomyślicie, że każda z obserwacji jest cegiełką i postawicie tę cegiełkę w miejscu odpowiadającym wartości obserwacji na osi liczbowej, to jeżeli podniesicie oś z cegiełkami i oprzecie ją na czubku palca w miejscu odpowiadającym średniej, to oś będzie w równowadze. Dla zmiennych ciągłych zaobserwujemy podobne zjawisko, ale kostrukcja równoważni będzie nieco bardziej skomplikowana (dla zainteresowanych: będzie wymagała posłużenia się matematycznym formalizmem odnoszącym się do zmiennych losowych).</p>
 <p><strong>Odchylenie standardowe</strong> to miara rozproszenia wartości zmiennej wokół średniej. Będziemy oznaczać je symbolem <span class="math inline">\(s\)</span>. By obliczyć odchylenie standardowe, będziemy korzystać z następującego wzoru<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>:</p>
-<p><span class="math display">\[s = \sqrt{\frac{1}{n-1}(\sum_{i=1}^{n}(x_i - \bar{x})^2)}.\]</span></p>
+<p><span class="math display">\[s = \sqrt{\frac{1}{n-1}(\sum_{i=1}^{n}x_i - \bar{x})^2}.\]</span></p>
 <p>Odchylenie standardowe to pierwiastek z wariancji. W porównaniu do wariancji ma tę zaletę, że jest wyrażone w tych samych jednostkach, co wartości naszej zmiennej (np. w metrach a nie metrach<span class="math inline">\(^2\)</span>$, jeżeli interesuje nas wzrost) i łatwiej je intepretować.</p>
 <p>Gdy liczycie odchylenie standardowe, możecie skorzystać z następującej procedury:</p>
 <ol style="list-style-type: decimal">
@@ -179,23 +179,36 @@ div.csl-indent {
 </ol>
 </div>
 <div id="mediana-i-rozstęp-ćwiartkowy" class="section level4 hasAnchor" number="2.2.1.2">
-<h4><span class="header-section-number">2.2.1.2</span> Mediana i rozstęp ćwiartkowy<a href="#mediana-i-rozst%C4%99p-%C4%87wiartkowy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4><span class="header-section-number">2.2.1.2</span> Mediana i rozstęp ćwiartkowy<a href="lab02_charakterystyka.html#mediana-i-rozstęp-ćwiartkowy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>Mediana</strong>, podobnie jak średnia, jest miarą centralnej tendencji obecnej w zbiorze danych, można również powiedzieć, że jest wartością środkową. Jest to wartość poniżej i powyżej której znajduje się dokładnie połowa obserwacji. By określić medianę, musimy uporządkować wartości od najmniejszej do największej. Np. dla obserwacji wzrostu <span class="math inline">\({1,62, 1,69, 1,69, 1,72, 1,74, 1,75, 1,78}\)</span> medianą będzie wartość <span class="math inline">\(1,72\)</span>. Jeżeli liczba obserwacji będzie parzysta, by określić medianę musimy obliczyć średnią z dwóch środkowych obserwacji, np. dla obserwacji <span class="math inline">\({1,62, 1,69, 1,69, 1,72, 1,74, 1,75, 1,77, 1,78}\)</span> mediana będzie wynosić <span class="math inline">\(1,72 + 1,74=1,73\)</span>.</p>
+<p><strong>Rozstęp ćwiartkowy</strong> jest miarą rozproszenia danych. Mówi, jak dużą rozpiętość ma zakres wartości, w którym mieści się środkowe 50% obserwacji, czyli dwie środkowe ćwierci (25% obserwacji), jedna poniżej, a druga powyżej mediany. By obliczyć rozstęp ćwiartkowy, musimy uporządkować wartości od najmniejszej do największej. Następnie musimy wyznaczyć pierwszy oraz trzeci kwartyl. Pierwszy kwartyl to taka wartość, poniżej której mieści się 25% obserwacji, natomiast trzeci kwartyl, to wartość poniżej której mieści się 75% obserwacji. Rozstęp ćwiartkowy uzyskujemy po odjęciu pierwszego kwartyla od trzeciego kwartyla.</p>
+<div class="float">
+<img src="img/iqr.png" alt="Mediana i rozstęp ćwiartkowy" />
+<div class="figcaption">Mediana i rozstęp ćwiartkowy</div>
+</div>
+</div>
+<div id="moda-dominanta" class="section level4 hasAnchor" number="2.2.1.3">
+<h4><span class="header-section-number">2.2.1.3</span> Moda (dominanta)<a href="lab02_charakterystyka.html#moda-dominanta" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>Moda</strong>, inaczej zwana <strong>dominantą</strong>, to wartość najczęściej występująca w zbiorze obserwacji. Jeżeli np. mamy następujące obserwacje tego, ile osoby badane mają dzieci: <span class="math inline">\({1, 0, 0, 1, 1, 2, 2, 3, 1, 2, 1, 2, 4}\)</span> to moda będzie wynosiła 1.</p>
+</div>
+<div id="prezentacja-graficzna" class="section level4 hasAnchor" number="2.2.1.4">
+<h4><span class="header-section-number">2.2.1.4</span> Prezentacja graficzna<a href="lab02_charakterystyka.html#prezentacja-graficzna" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><em>(będzie na następnych zajęciach)</em></p>
 </div>
 </div>
 <div id="lab02_charakterystyka_kat" class="section level3 hasAnchor" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Statystyki opisowe dla zmiennych kategorialnych<a href="lab02_charakterystyka.html#lab02_charakterystyka_kat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="zmienne-porządkowe" class="section level4 hasAnchor" number="2.2.2.1">
-<h4><span class="header-section-number">2.2.2.1</span> Zmienne porządkowe<a href="#zmienne-porz%C4%85dkowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4><span class="header-section-number">2.2.2.1</span> Zmienne porządkowe<a href="lab02_charakterystyka.html#zmienne-porządkowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Dla zmiennych porządkowych <strong>możemy określić medianę i rozstęp ćwiartkowy</strong> (dokładnie tak samo jak dla zmiennych ilościowych: <a href="lab02_charakterystyka.html#mediana-i-rozstęp-ćwiartkowy">Mediana i rozstęp ćwiartkowy</a>).</p>
+<p>W przypadku zmiennych porządkowych podawanie średniej nie ma sensu. Po pierwsze, w przypadku zmiennych porządkowych takich jak wykształcenie określane przy pomocy kategorii “podstawowe”, “zawodowe” itd. trudno wyobrazić sobie, co miałaby oznaczać średnia, szczególnie jeżeli np. “wypadnie” nam pomiędzy wykształceniem średnim a wyższym lub zawodowym a średnim. Poza tym nie wiemy, w jaki sposób przypisać wartości liczbowe, które będziemy uśredniać - czy kolejnym poziomom wykształcenia powinny odpowiadać liczby <span class="math inline">\(1,2,3\)</span> i <span class="math inline">\(4\)</span>? Czy też np. <span class="math inline">\(8, 11, 12, 15\)</span>, odpowiadające mniej-więcej liczbie lat edukacji aż do uzyskania danego poziomu? Jest to arbitralna decyzja i dlatego średnia nie ma większego sensu.</p>
+<p>Podobnie jak w przypadku wykształcenia nie ma sensu uśrednianie odpowiedzi na skali od 1 do 5, gdzie kolejne stopnie skali oznaczają np. “bardzo niezadowolony”, “raczej niezadowolony”, “ani niezadowolony, ani zadowolony”, “raczej zadowolony” oraz “bardzo zadowolony”. Nawet w przypadku, gdy poprosimy badanych po prostu o wskazanie, jak bardzo są zadowoleni na skali od 1 do 5 (lub od 1 do 7, albo od 1 do 10) w gruncie rzeczy nie wiemy, co badany myślał, gdy zaznaczał dany stopień skali. Dla każdego badanego może on oznaczać coś nieco innego (dlatego warto opisywać wszystkie stopnie!), a co gorsza może być tak, że badany dla większości swoich doświadczeń zaznaczy 6 lub 7, stopień piąty zignoruje, by ocenić zadowolenie na 4 będzie musiał doświadczyć czegoś naprawdę nieprzyjemnego, a kolejne niższe stopnie będą rzadko używane. Inna osoba może wyobrazić sobie tę skalę zupełnie inaczej. Jeżeli mamy jedno takie pytanie i policzymy średnią dla naszych obserwacji, trudno będzie powiedzieć, co oznacza taka średnia.</p>
+<p>Nic nie stoi na przeszkodzie, byśmy dla zmiennej porządkowej określili również <strong>modę</strong> oraz podali, jaki odsetek badanych wskazał każdą z możliwych odpowiedzi.</p>
 </div>
 <div id="zmienne-nominalne" class="section level4 hasAnchor" number="2.2.2.2">
 <h4><span class="header-section-number">2.2.2.2</span> Zmienne nominalne<a href="lab02_charakterystyka.html#zmienne-nominalne" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div id="moda" class="section level5 hasAnchor" number="2.2.2.2.1">
-<h5><span class="header-section-number">2.2.2.2.1</span> Moda<a href="lab02_charakterystyka.html#moda" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-</div>
-<div id="proporcje-i-odsetki" class="section level5 hasAnchor" number="2.2.2.2.2">
-<h5><span class="header-section-number">2.2.2.2.2</span> Proporcje i odsetki<a href="lab02_charakterystyka.html#proporcje-i-odsetki" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>W przypadku zmiennych nominalnych możemy podać modę oraz proporcje lub odsetki osób badanych, które należą do każdej z kategorii.</p>
 
-</div>
 </div>
 </div>
 </div>
@@ -226,42 +239,42 @@ div.csl-indent {
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-  "sharing": {
-    "github": false,
-    "facebook": true,
-    "twitter": true,
-    "linkedin": false,
-    "weibo": false,
-    "instapaper": false,
-    "vk": false,
-    "whatsapp": false,
-    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-  },
-  "fontsettings": {
-    "theme": "white",
-    "family": "sans",
-    "size": 2
-  },
-  "edit": {
-    "link": null,
-    "text": null
-  },
-  "history": {
-    "link": null,
-    "text": null
-  },
-  "view": {
-    "link": null,
-    "text": null
-  },
-  "download": null,
-  "search": {
-    "engine": "fuse",
-    "options": null
-  },
-  "toc": {
-    "collapse": "subsection"
-  }
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
 });
 });
 </script>

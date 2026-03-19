@@ -31,7 +31,6 @@ probablistyczne-i-nieprobabilistyczne-metody-doboru-próby
 dobór-probabilistyczny-i-nieprobabilistyczny
 operat-losowania
 dobór-systematyczny
-dobór-losowy-grupowy
 metody-nieprobabilistyczne
 rozkład-w-populacji
 jak-dokładnie-wynik-uzyskany-w-naszej-próbie-odzwierciedla-wynik-w-populacji

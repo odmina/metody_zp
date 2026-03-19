@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Informacje orgzanizacyjne | Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="Informacje orgzanizacyjne | Metody badań naukowych w zdrowiu publicznym" />
+  <title>3.4 Rola losowego (probabilistycznego) doboru próby | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="3.4 Rola losowego (probabilistycznego) doboru próby | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Informacje orgzanizacyjne | Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="3.4 Rola losowego (probabilistycznego) doboru próby | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Informacje orgzanizacyjne | Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="3.4 Rola losowego (probabilistycznego) doboru próby | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="lab00_cel.html"/>
-<link rel="next" href="lab00_plan.html"/>
+<link rel="prev" href="rozkład-normalny.html"/>
+<link rel="next" href="przedziały-ufności.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -168,21 +168,25 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab00_przebieg" class="section level2 unnumbered hasAnchor">
-<h2>Informacje orgzanizacyjne<a href="lab00_przebieg.html#lab00_przebieg" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Każde zajęcia będą rozpoczynać się wejściówką obejmującą materiał z poprzednich zajęć. Spośród wyników wejściówek, trzy najgorsze są odrzucane. Nieobecności odrabiacie we własnym zakresie na podstawie udostępnionych w tej książce materiałów oraz zalecanej literatury. W przypadku wątpliwości, trudności itp. zapraszam na konsultacje.</p>
-<div class="box">
-<p><strong>LITERATURA I ZAGADNIENIA NA WEJŚCIÓWKI</strong></p>
-<p>Na początku każdego z rozdziałów tej książki znajdziecie informacje o literaturze i zagadnieniach na wejściówkę, która odbędzie się na kolejnych zajęciach.</p>
-</div>
+<div id="lab03_prob-proba" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Rola losowego (probabilistycznego) doboru próby<a href="lab03_prob-proba.html#lab03_prob-proba" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Dobór probabilistyczny</strong> zakłada, że dysponujemy operatem losowania, każda jednostka ma taką samą szansę znalezienia się w próbie, a próbę wyłaniamy w drodze losowania. <strong>Operat losowania</strong> to spis wszystkich jednostek wchodzących w skład populacji.Losowanie może przybierać różne formy, obecnie najczęściej realizuje się je na komputerze (z wykorzystaniem generatora liczb pseudolosowych, dla zainteresowanych artykuł na Wikipedii: <a href="https://pl.wikipedia.org/wiki/Generator_liczb_pseudolosowych">Generator liczb pseudolosowych</a>).</p>
+<p>Ogólnopolskie operaty losowania:</p>
+<ul>
+<li>baza PESEL (można losować osoby);</li>
+<li>rejestr TERYT (można losować powiaty, gminy, miejscowości, ulice), <a href="https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/aktualnosci/aktualnosci.aspx">link</a>;</li>
+<li>baza REGON (można losować przedsiębiorstwa), <a href="https://wyszukiwarkaregon.stat.gov.pl/appBIR/index.aspx">link</a>.</li>
+</ul>
+<p>Gdybyście chcieli swoim badaniem objąć populację studentów GUMed, dobrym operatem losowania będzie np. zdobyta z działu IT lista adresów mailowych wszystkich aktualnie studiujących osób.</p>
+<p>W doborze nieprobabilistycznym nie mamy operatu losowania i nie każda jednostka populacji ma taką samą szansę znaleźć się w próbie. Łatwo może wystąpić sytuacja, w której próba będzie obciążona, tzn. jej parametry będą w systematyczny sposób różnić się od parametrów obserwowanych w populacji. Jeżeli np. będziecie chcieli przeprowadzić badanie, w którym określicie poziom jakiejś zmiennej związanej ze świadomością zdrowotną i przeprowadzicie je wśród swoich znajomych i ich znajomych, jest wysoce prawdopodobne, że osoby z tak dobranej próby będą charakteryzowały się wyższą świadomością zdrowotną niż ogół studentów (bo wielu z nich studiuje na uczelni medycznej albo ma tam znajomych).</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="lab00_cel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lab00_plan.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rozkład-normalny.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="przedziały-ufności.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

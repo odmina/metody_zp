@@ -2,8 +2,8 @@ name: metody_zp
 channels:
   - conda-forge
 dependencies:
-  - ipywidgets=8.1.5=pyhd8ed1ab_1
-  - matplotlib=3.10.6=py312h1f38498_1
-  - matplotlib-inline=0.1.7=pyhd8ed1ab_1
-  - numpy=2.2.4=py312h7c1f314_0
-  - scipy=1.15.2=py312h99a188d_0
+  - ipywidgets=8.1.5
+  - matplotlib=3.10.6
+  - matplotlib-inline=0.1.7
+  - numpy=2.2.4
+  - scipy=1.15.2

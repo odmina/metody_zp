@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <title>3.3 Rozkład normalny | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="3.3 Rozkład normalny | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="3.3 Rozkład normalny | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="3.3 Rozkład normalny | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="lab02_charakterystyka.html"/>
-<link rel="next" href="lab03_def.html"/>
+<link rel="prev" href="lab03_kryteria.html"/>
+<link rel="next" href="lab03_prob-proba.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,27 +166,36 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab03" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">3</span> Próba i populacja. Przedziały ufności<a href="lab03.html#lab03" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="box">
-<p><strong>LITERATURA I ZAGADNIENIA NA WEJŚCIÓWKI</strong></p>
-<p>Na wejściówce musice umieć obliczyć <del>przedział ufności dla średniej</del> błąd standardowy średniej, rozumieć różnicę pomiędzy probabilistycznym i nieprobabilistycznym doborem próby, sformułować kryteria kwalifikacji do badania oraz na podstawie opisu zdecydować, czy podane kryteria kwalifikacji do badania i sposób dotarcia do respondentów gwarantują, że zbadana próba będzie odpowiadała zdefiniowanej populacji.</p>
-<p>W zrozumieniu zagadnień omawianych na zajęciach (błąd standardowy średniej) pomóc może rozdział “Orzeł czy reszka? Rola przypadku” z podręcznika Epidemiologia: podręcznik dla studentów i praktyków / Peneloppe Webb, Chris Bain, Andrew Page. W zrozumieniu, czy zbadana próba będzie odpowiadała zdefiniowanej populacji pomaga przede wszystkim wyobraźnia i odpowiedzenie sobie na pytanie, czy sposób dotarcia do respondentów nie sprawia, że jakąś szczególną grupę pomijamy.</p>
+<div id="lab03_normal" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Rozkład normalny<a href="lab03_normal.html#lab03_normal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Rozkład normalny będzie naszym “roboczym” przykładem. W przypadku zmiennych ilościowych ciągłych, których poziom kształtuje wiele czynników, takich jak np. wzrost lub masa ciała oraz wyników w niektórych kwestionariuszach sensownie jest założyć, że w populacji mają one rozkład normalny. Oprócz tego rozkład normalny pomoże nam w szacowaniu przedziałów ufności.</p>
+<div class="figure"><span style="display:block;" id="fig:norm-ladny"></span>
+<img src="img/wzrost_kobiety.png" alt="Rozkład normalny. Pionowa przerywana linia oznacza średnią, a przerywane linie oznaczają kolejne odchylenia standardowe poniżej i powyżej średniej. Niezależnie od tego, jakie wartości przyjmą średnia i odchylenie standardowe, między średnią a pierwszym lub drugim odchyleniem stadardowym poniżej lub powyżej średniej będzie zawsze mieścił się taki sam odsetek obserwacji."  />
+<p class="caption">
+Rycina 3.1: Rozkład normalny. Pionowa przerywana linia oznacza średnią, a przerywane linie oznaczają kolejne odchylenia standardowe poniżej i powyżej średniej. Niezależnie od tego, jakie wartości przyjmą średnia i odchylenie standardowe, między średnią a pierwszym lub drugim odchyleniem stadardowym poniżej lub powyżej średniej będzie zawsze mieścił się taki sam odsetek obserwacji.
+</p>
 </div>
-<p><strong>Populacja</strong> to ogół osobników danego gatunku, w naszym przypadku ludzi lub ogół ludzi zamieszkujących na danym obszarze (np. populacja Polski, populacja Gdańska) albo ogół ludzi posiadających jakąś cechę (np. populacja osób chorych na cukrzycę typu II) albo spełniających określone kryteria.</p>
-<p>W związku z tym, że zwykle nie jesteśmy w stanie zbadać wszystkich osobników w populacji, losujemy <strong>próbę</strong> - objęty badaniem podzbiór populacji.</p>
-<div class="box">
-<p><strong>ZADANIE</strong></p>
-<p>Sięgnij do wytycznych <a href="https://www.strobe-statement.org">STROBE</a>. W których punktach wykorzystasz statystyki opisowe omawiane na poprzednich zajęciach? Które punkty dotyczą uczestników badania, próby i metod doboru próby?</p>
+<div class="figure"><span style="display:block;" id="fig:norm-srednie"></span>
+<img src="img/norm_means_.png" alt="Średnia określa pozycję rozkladu na osi x. Mniejsza średnia powoduje, że cały rozkład przesuwa się w lewo, a większa - w prawo."  />
+<p class="caption">
+Rycina 3.2: Średnia określa pozycję rozkladu na osi x. Mniejsza średnia powoduje, że cały rozkład przesuwa się w lewo, a większa - w prawo.
+</p>
 </div>
+<div class="figure"><span style="display:block;" id="fig:norm-sds"></span>
+<img src="img/norm_sds_.png" alt="Odchylenie standardowe decyduje o tym, jak szeroki będzie rozkład - im większe odchylenie standardowe, tym rozkład jest szerszy."  />
+<p class="caption">
+Rycina 3.3: Odchylenie standardowe decyduje o tym, jak szeroki będzie rozkład - im większe odchylenie standardowe, tym rozkład jest szerszy.
+</p>
+</div>
+<p>Na wykresach przedstawiających rozkład normalny na osi <span class="math inline">\(y\)</span> widoczna jest tak zwana gęstość prawdopodobieństwa. Jej wartość zależy od tego, jak duże jest odchylenie standardowe. Pole pod krzywą obrazującą rozkład normalny zawsze wynosi 1. A zatem im większe odchylenie standardowe, tym nasz wykres będzie szerszy i mniej “strzelisty”, a wartości gęstości prawdopodbieństwa będą mniejsze.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="lab02_charakterystyka.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lab03_def.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="lab03_kryteria.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lab03_prob-proba.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

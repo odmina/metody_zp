@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <title>3.5 Przedziały ufności | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="3.5 Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="3.5 Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Próba i populacja. Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="3.5 Przedziały ufności | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="lab02_charakterystyka.html"/>
-<link rel="next" href="lab03_def.html"/>
+<link rel="prev" href="lab03_prob-proba.html"/>
+<link rel="next" href="refs.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,27 +166,86 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab03" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">3</span> Próba i populacja. Przedziały ufności<a href="lab03.html#lab03" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="lab03_ci" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Przedziały ufności<a href="lab03_ci.html#lab03_ci" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Nawet, jeżeli mamy idealnie dobraną, losową próbę, nie możemy być pewni, że wynik w populacji będzie taki sam, jak ten, który zaobserwowaliśmy. Obrazowo omówiony przykład znajduje się notatniku - Zajęcia 03 (wkrótce).</p>
+<p>Wyobraźcie sobie, że (nieskończenie)wiele razy dokonujemy losowania <span class="math inline">\(n\)</span>-elementowych prób z populacji i dla każdej z tych prób obliczymy średnią. Jeżeli nasze próby będą wystarczająco liczne, to rozkład średnich będzie dążył do rozkładu normalnego o średniej obserwowanej w populacji i znanym odchyleniu standardowym.</p>
+<p>Odchylenie standardowe rozkładu średnich z wielokrotnie losowanych prób to <strong>błąd standardowy średniej (SEM)</strong>, który wynosi:</p>
+<p><span class="math display">\[SEM = \frac{s}{\sqrt{n}}\]</span>,</p>
+<p>gdzie <span class="math inline">\(s\)</span> to odchylenie standardowe w populacji, a <span class="math inline">\(n\)</span> - wielkość próby. Zauważcie, że im większe odchylenie standardowe w populacji, tym większy SEM. Jednocześnie im większa próba, tym mniejszy SEM. To dosyć intuicyjne: im więcej osób zbadamy, tym dokładniej oszacujemy średnią w populacji. Jednocześnie im większe odchylenie standardowe w populacji, tym większe “ryzyko”, że do naszej próby trafią osoby, u których poziom badanej zmiennej mocno różni się od populacyjnej średniej.</p>
+<div id="szacowanie-przedziałów-ufności" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Szacowanie przedziałów ufności<a href="#szacowanie-przedzia%C5%82%C3%B3w-ufno%C5%9Bci" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Znając rozkład średnich z próby (przy powtarzanym losowaniu) i błąd standardowy średniej jesteśmy w stanie określić, jakie jest prawdopodobieństwo uzyskania w badaniu średniej np. mniejszej lub większej niż średnia w populacji.</li>
+<li>Dla dużych prób możecie założyć, że rozkład średnich jest rozkładem normalnym (nie ma sztywnej granicy, n=25 to mała próba, n=1000 to duża próba).</li>
+<li>Przy mniejszych próbach sprawa jest trochę bardziej skomplikowana, ale uwaga: zawsze możecie skorzystać z pakietu statystycznego :)</li>
+</ul>
+</div>
+<div id="przedziały-ufności---symulacja" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Przedziały ufności - symulacja<a href="#przedzia%C5%82y-ufno%C5%9Bci---symulacja" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><a href="https://seeing-theory.brown.edu/frequentist-inference/index.html#section2">Seeing theory</a></li>
+<li><a href="https://rpsychologist.com/d3/ci/">Interpreting Confidence Intervals</a></li>
+</ul>
+</div>
+<div id="dla-dużych-prób" class="section level3 hasAnchor" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Dla dużych prób<a href="#dla-du%C5%BCych-pr%C3%B3b" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>68% średnich mieści się w zakresie +/- 1 SEM</li>
+<li>75% średnich mieści się w zakresie +/- 1,15 SEM</li>
+<li>90% średnich mieści się w zakresie +/- 1,64 SEM</li>
+<li>95% średnich mieści się w zakresie +/- 1,96 SEM</li>
+<li>99% średnich mieści się w zakresie +/- 2,58 SEM</li>
+</ul>
+</div>
+<div id="interpretacja-przedziału-ufności-dla-średniej" class="section level3 hasAnchor" number="3.5.4">
+<h3><span class="header-section-number">3.5.4</span> Interpretacja przedziału ufności (dla średniej)<a href="#interpretacja-przedzia%C5%82u-ufno%C5%9Bci-dla-%C5%9Bredniej" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>95% przedział ufności to taki przedział, że gdybyśmy realizowali nasze badanie wielokrotnie, to 95% oszacowanych przedziałów zawierałoby prawdziwą średnią w populacji.</li>
+<li>NIGDY nie wiemy, jak daleko ta średnia, którą uzyskaliśmy jest daleko od średniej w populacji!!!</li>
+<li>Przedział ufności zawiera prawdziwą średnią w populacji albo jej nie zawiera, a my nie wiemy, czy ona tam jest. Dla 95% przedziału ufności wiemy, że 95% tak oszacowanych przedziałów zawierałoby średnią.</li>
+<li>Im szerszy przedział ufności, tym mniejsze zaufanie mamy do naszego punktowego oszacowania (średniej).</li>
+</ul>
+</div>
+<div id="procedura-szacowania-przedziału-ufności-dla-średniej" class="section level3 hasAnchor" number="3.5.5">
+<h3><span class="header-section-number">3.5.5</span> Procedura szacowania przedziału ufności dla średniej<a href="#procedura-szacowania-przedzia%C5%82u-ufno%C5%9Bci-dla-%C5%9Bredniej" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Oblicz średnią z uzyskanej próby.</li>
+<li>Oblicz odchylenie standardowe z uzyskanej próby.</li>
+<li>Oblicz SEM: podziel odchylenie standardowe przez pierwiastek z liczebności uzyskanej próby.</li>
+<li>Ustal satysfakcjonujący Cię poziom ufności i sprawdź, przez ile musisz pomnożyć SEM.</li>
+<li>Ustal dolną granicę przedziału ufności: od średniej odejmij SEM ponożony przez liczbę z poprzedniego punktu.</li>
+<li>Ustal górną granicę przedziału ufności: do średniej dodaj tyle samo, ile odjąłeś/aś w poprzednim punkcie.</li>
+</ul>
+</div>
+<div id="jak-szacujemy-przedziały-ufności-dla-innych-statystyk" class="section level3 hasAnchor" number="3.5.6">
+<h3><span class="header-section-number">3.5.6</span> Jak szacujemy przedziały ufności dla innych statystyk?<a href="#jak-szacujemy-przedzia%C5%82y-ufno%C5%9Bci-dla-innych-statystyk" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Możemy oszacować przedział ufności dla:
+<ul>
+<li>różnicy między średnimi,</li>
+<li>ilorazu szans,</li>
+<li>ryzyka względnego,</li>
+<li>proporcji…</li>
+</ul></li>
+<li>…i wielu innych!</li>
+<li>Procedura jest zawsze podobna, podobna jest również interpretacja, choć szczegóły techniczne się różnią.</li>
+</ul>
 <div class="box">
-<p><strong>LITERATURA I ZAGADNIENIA NA WEJŚCIÓWKI</strong></p>
-<p>Na wejściówce musice umieć obliczyć <del>przedział ufności dla średniej</del> błąd standardowy średniej, rozumieć różnicę pomiędzy probabilistycznym i nieprobabilistycznym doborem próby, sformułować kryteria kwalifikacji do badania oraz na podstawie opisu zdecydować, czy podane kryteria kwalifikacji do badania i sposób dotarcia do respondentów gwarantują, że zbadana próba będzie odpowiadała zdefiniowanej populacji.</p>
-<p>W zrozumieniu zagadnień omawianych na zajęciach (błąd standardowy średniej) pomóc może rozdział “Orzeł czy reszka? Rola przypadku” z podręcznika Epidemiologia: podręcznik dla studentów i praktyków / Peneloppe Webb, Chris Bain, Andrew Page. W zrozumieniu, czy zbadana próba będzie odpowiadała zdefiniowanej populacji pomaga przede wszystkim wyobraźnia i odpowiedzenie sobie na pytanie, czy sposób dotarcia do respondentów nie sprawia, że jakąś szczególną grupę pomijamy.</p>
+<p><strong>NIGDY NIE PODAWAJCIE WYNIKU BEZ PRZEDZIAŁU UFNOŚCI!</strong></p>
+<p><strong>ZAWSZE PODAWAJCIE PRZEDZIAŁ UFNOŚCI!</strong></p>
 </div>
-<p><strong>Populacja</strong> to ogół osobników danego gatunku, w naszym przypadku ludzi lub ogół ludzi zamieszkujących na danym obszarze (np. populacja Polski, populacja Gdańska) albo ogół ludzi posiadających jakąś cechę (np. populacja osób chorych na cukrzycę typu II) albo spełniających określone kryteria.</p>
-<p>W związku z tym, że zwykle nie jesteśmy w stanie zbadać wszystkich osobników w populacji, losujemy <strong>próbę</strong> - objęty badaniem podzbiór populacji.</p>
-<div class="box">
-<p><strong>ZADANIE</strong></p>
-<p>Sięgnij do wytycznych <a href="https://www.strobe-statement.org">STROBE</a>. W których punktach wykorzystasz statystyki opisowe omawiane na poprzednich zajęciach? Które punkty dotyczą uczestników badania, próby i metod doboru próby?</p>
+
 </div>
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="lab02_charakterystyka.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lab03_def.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="lab03_prob-proba.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="refs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

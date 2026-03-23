@@ -1,0 +1,1 @@
+By odpalić notatnik prezentujący przedziały ufności, wciśnij ten przycisk: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/odmina/metody_zp/HEAD)

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Cel zajęć | Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="Cel zajęć | Metody badań naukowych w zdrowiu publicznym" />
+  <title>4 Metody doboru próby. Reprezentatywność. Obciążenie w doborze próby | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="4 Metody doboru próby. Reprezentatywność. Obciążenie w doborze próby | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Cel zajęć | Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="4 Metody doboru próby. Reprezentatywność. Obciążenie w doborze próby | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Cel zajęć | Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="4 Metody doboru próby. Reprezentatywność. Obciążenie w doborze próby | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="lab00.html"/>
-<link rel="next" href="lab00_przebieg.html"/>
+<link rel="prev" href="lab03_ci.html"/>
+<link rel="next" href="lab04_probnprob.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -186,17 +186,41 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab00_cel" class="section level2 unnumbered hasAnchor">
-<h2>Cel zajęć<a href="lab00_cel.html#lab00_cel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Podstawowym celem zajęć jest zapoznanie Was metodami wykorzysywanymi w ilościowych badaniach w zdrowiu publicznym. Po pierwszym semestrze znacie już kolejne etapy procesu badawczego - w tym semestrze dowiecie się, JAK skutecznie i prawidłowo pokonywać te etapy w badaniach ilościowych.</p>
+<div id="lab04" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Metody doboru próby. Reprezentatywność. Obciążenie w doborze próby<a href="lab04.html#lab04" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="box">
+<p><strong>LITERATURA I ZAGADNIENIA NA WEJŚCIÓWKI</strong></p>
+<p>Na wejściówce musice umieć obliczyć przedział ufności dla średniej, rozumieć różnicę pomiędzy probabilistycznym i nieprobabilistycznym doborem próby, stwierdzić, czy w opisanej sytuacji istnieje ryzko obciążenia próby oraz opisać, jaki może być mechanizm i konsekwencje obciążenia próby.</p>
+<p>W zrozumieniu zagadnień omawianych na zajęciach (błąd standardowy średniej) pomóc może rozdział “Nie wszystko złoto, co się świeci:: problem błędu” z podręcznika Epidemiologia: podręcznik dla studentów i praktyków / Peneloppe Webb, Chris Bain, Andrew Page.</p>
+</div>
+<p>Istnieje wiele metod doboru próby. Niektóre z nich zakładają losowanie z populacji i możemy powiedzieć, że są metodami probabilistycznymi. Inne opierają się na sposobach dotarcia do badanych nie wymagających losowania i te są metodami nieprobabilistycznymi.</p>
+<p>*Dobór probabilistyczny<strong> zakłada, że dysponujemy operatem losowania, każda jednostka ma taką samą szansę znalezienia się w próbie, a próbę wyłaniamy w drodze losowania. </strong>Operat losowania** to spis wszystkich jednostek wchodzących w skład populacji.Losowanie może przybierać różne formy, obecnie najczęściej realizuje się je na komputerze (z wykorzystaniem generatora liczb pseudolosowych, dla zainteresowanych artykuł na Wikipedii: <a href="https://pl.wikipedia.org/wiki/Generator_liczb_pseudolosowych">Generator liczb pseudolosowych</a>).</p>
+<p>Ogólnopolskie operaty losowania:</p>
+<ul>
+<li>baza PESEL (można losować osoby);</li>
+<li>rejestr TERYT (można losować powiaty, gminy, miejscowości, ulice), <a href="https://eteryt.stat.gov.pl/eTeryt/rejestr_teryt/aktualnosci/aktualnosci.aspx">link</a>;</li>
+<li>baza REGON (można losować przedsiębiorstwa), <a href="https://wyszukiwarkaregon.stat.gov.pl/appBIR/index.aspx">link</a>.</li>
+</ul>
+<p>Gdybyście chcieli swoim badaniem objąć populację studentów GUMed, dobrym operatem losowania będzie np. zdobyta z działu IT lista adresów mailowych wszystkich aktualnie studiujących osób.</p>
+<p>W doborze nieprobabilistycznym nie mamy operatu losowania i nie każda jednostka populacji ma taką samą szansę znaleźć się w próbie. Łatwo może wystąpić sytuacja, w której próba będzie obciążona, tzn. jej parametry będą w systematyczny sposób różnić się od parametrów obserwowanych w populacji. Jeżeli np. będziecie chcieli przeprowadzić badanie, w którym określicie poziom jakiejś zmiennej związanej ze świadomością zdrowotną i przeprowadzicie je wśród swoich znajomych i ich znajomych, jest wysoce prawdopodobne, że osoby z tak dobranej próby będą charakteryzowały się wyższą świadomością zdrowotną niż ogół studentów (bo wielu z nich studiuje na uczelni medycznej albo ma tam znajomych).</p>
+<div id="lab04_nie" class="section level3 hasAnchor" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> W przypadku jakich badań NIE dokonujemy doboru próby?<a href="lab04.html#lab04_nie" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Innymi słowy, w jakich badaniach badamy całą populację?
+<ul>
+<li>Spis powszechny.</li>
+<li>Badania z wykorzystaniem niektórych rejestrów (oczywiście jeżeli nie losujemy przypadków z rejestru).</li>
+</ul></li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="lab00.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lab00_przebieg.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="lab03_ci.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lab04_probnprob.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

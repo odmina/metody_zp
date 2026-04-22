@@ -61,3 +61,13 @@ lab04_report
 lab04_missing
 lab04_berkson
 zadania
+lab05
+lab05_opracowanie
+lab05_trafnosc
+analiza-czynnikowa
+w-jaki-sposób-dowiadujemy-się-o-trafności-testu
+lab05_rzetelnosc
+lab05_standaryzacja
+lab05_normy
+lab05_korzystanie
+lab05_zadanie

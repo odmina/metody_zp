@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="Metody badań naukowych w zdrowiu publicznym" />
+  <title>6.4 Testowanie hipotez | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="6.4 Testowanie hipotez | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="6.4 Testowanie hipotez | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="6.4 Testowanie hipotez | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="lab00.html"/>
+<link rel="prev" href="hipotezy-w-badaniach-kliniczno-kontrolnych.html"/>
+<link rel="next" href="przedziały-ufności-dla-or-i-rr.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -208,23 +208,55 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Metody badań naukowych w zdrowiu publicznym</h1>
-<h2 class="subtitle"><em>Materiały z zajęć</em></h2>
-<p class="author"><em>Małgorzata Basińska</em></p>
-<p class="date"><em>2026-05-07</em></p>
+<div id="testowanie-hipotez" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Testowanie hipotez<a href="testowanie-hipotez.html#testowanie-hipotez" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Jak myślicie, czy jeżeli w grupie narażonej i kontrolnej ryzyko wystąpienia interesującego nas rezultatu jest dokładnie takie samo, to czy czasem w wylosowanej próbie możemy zaobserowować, że ryzyko będzie większe w jednej lub drugiej grupie? Zdecydowanie tak! Nawet jeżeli wylosujemy próbę bez obciążenia!</p>
+<p>Można porównać to do sytuacji, w której macie dwie dokładnie takie same monety i każdą z nich rzucacie 10 razy. Pomimo tego, że prawdopodobieństwo wyrzucenia reszki jest takie samo dla jednej i dla drugiej monety, to całkiem możliwe jest, że jedną monetą wyrzucicie 4 reszki lub mniej, a drugą 6 reszek lub więcej.</p>
+<p>Dlatego w badaniach stosujemy procedurę testowania hipotez. Każdej hipotezie, którą postawimy w badaniu (zwanej hipotezą alternatywną) towarzyszy tak zwana hipoteza zerowa, która stanowi jej zaprzeczenie. Często hipoteza zerowa będzie mówić, że między zmiennymi ujętymi w naszej hipotezie
+(alternatywnej) nie ma związku i statystyczna zależność w populacji NIE
+istnieje. Np. hipoteza zerowa może mówić, że iloraz szans lub ryzyko względne są równe dokładnie 1.</p>
+<p>Testując hipotezy przyjmujemy na chwilę, że hipoteza zerowa jest prawdziwa i określamy rozkład statystyki testowej przy tym założeniu (istnieją rózne statystyki testowe, trzeba wybrać odpowiednią, będziecie się jeszcze o tym uczyć). Znając ten rozkład sprawdzamy, jak duże jest prawdopodobieństwo, że wartość statystyki testowej taka, jaką zaobserwowaliśmy w naszym badaniu pojawiłaby się, gdyby prawdziwa była hipoteza zerowa. To prawdopodobieństwo to tak zwana wartość <span class="math inline">\(p\)</span>. Jeżeli wartość <span class="math inline">\(p\)</span> jest niższa od tzw. poziomu statystycznej istotności, to odrzucamy hipotezę zerową.</p>
+<p>Wartość <span class="math inline">\(p\)</span> to prawodpowobieństwo, więc może się mieścić w zakresie od 0 do 1. Zykle przyjmowanym poziomem istotności jest 5%, a zatem jeżeli uzyskamy <span class="math inline">\(p &lt; 5%\)</span>, to odrzucamy hipotezę zerową i przyjmujemy hipotezę alternatywną, czyli hipotezę naszego badania.</p>
+<p>Wynik <strong>istotny statystycznie</strong> to taki, którego pojawienie się
+<strong>jest mało prawdopodobne</strong> w sytuacji, gdy hipoteza zerowa jest prawdziwa, np.:</p>
+<ul>
+<li>Jeżeli otrzymaliśmy p = 0,05, to oznacza to, że gdyby hipoteza zerowa była prawdziwa, to prawdopodobieństwo uzyskania w badaniu
+zależności tak samo silnej jak uzyskana lub silniejszej wynosiłoby 0,05;</li>
+<li>Jeżeli otrzymaliśmy p = 0,01 too oznacza to, że gdyby hipoteza zerowa była prawdziwa, to prawdopodobieństwo uzyskania w badaniu
+zależności tak samo silnej jak uzyskana lub silniejszej wynosiłoby 0,01;</li>
+<li>Jeżeli otrzymaliśmy p = 0,5, to oznacza to, że gdyby hipoteza zerowa była prawdziwa, to prawdopodobieństwo uzyskania w badaniu
+zależności tak samo silnej jak uzyskana lub silniejszej wynosiłoby 0,5.</li>
+</ul>
+<p>W ostatnim wymienionym przypadku oczywiście nie odrzucimy hipotezy zerowej przy poziomie istotności <span class="math inline">\(\alpha = 0.05\)</span>.</p>
+<p>Co ważne, testując hipotezy możemy się pomylić, i to na dwa sposoby! Zauważcie, że są takie wyniki, które mogą pojawić się, gdy hipoteza zerowa jest prawdziwa, ale pozwalają na jej odrzucenie! Prawdopodobieństwo wystąpienia takiego wyniku jest równe poziomowi istotności. A zatem jeżeli żyjemy w świecie, w którym hipoteza zerowa jest prawdziwa i przyjmiemy poziom istotności <span class="math inline">\(\alpha = 0.05\)</span>, to pomylimy się w 5% przypadków i niesłusznie odrzucimy hipotezę zerową. To błąd pierwszego rodzaju. Jeżeli natomiast prawdziwa jest hipoteza alternatywna, ale zdarzy się tak, że uzyskamy wynik, który nie pozwala na odrzucienie hipotezy zerowwej, to popełnimy błąd drugiego rodzaju. Określenie prawdopodobieństwa błędu drugiego rodzaju jest nieco bardziej skomplikowane, bo zależy od tzw. wielkości efektu, czyli od tego, jak silnie związane są ze sobą badane zmienne.</p>
+<div class="box">
+<p><strong>PROBLEM WIELOKROTNYCH PORÓWNAŃ</strong></p>
+<p>Zdarza się tak, że w badaniu testujemy więcej niż jedną hipotezę. Dla każdej z testowanych hipotez prawdopodobieństwo popełnienia błędu pierwszego rodzaju wynosi 5%. Wyobraźcie sobie sytuację, w której testujemy wiele hipotez i wszystkie nasze hipotezy badawcze (alternatywne) są nieprawdziwe - między badanymi zmiennymi nie ma związku. Jakie jest prawdopodobieństwo, że popełnimy błąd pierwszego rodzaju przynajmniej raz?</p>
+<p>Prawdopodobieństwa wszystkich możliwych (rozłącznych) zdarzeń sumują się do 1. Zatem prawdopodobieństwo tego, że pomylimy się przynajmniej raz to prawdopodobieństwo tego że pomylimy się raz plus prawdopodobieństwo tego, że pomylimy się dwa razy, trzy razy itd. Czyli prawdopodobieństwo tego, że pomylimy się przynajmniej raz jest równe sumie prawdopodobieństw wszystkich możliwych zdarzeń poza zdarzeniem polegającym na tym, że nie pomylimy się ani razu. A zatem interesujące nas prawdopodobieństwo co najmniej jednego błędu pierwszego rodzaju wynosi <span class="math inline">\(1 - prawdopodobieństwo tego, że nie pomylimy się ani razu\)</span>.</p>
+<p>Gdy hipoteza zerowa jest prawdziwa prawdopodobieństwo pomyłki, czyli błędu pierwszego rodzaju, jest równe poziomowi istotności. Przyjmijmy, że wynosi on 5%. A zatem prawdopodobieństwo prawidłowej decyzji to <span class="math inline">\(1 - 5% = 95%\)</span>. W sytuacji, gdy dla pierwszej hipotezy podjęliśmy prawidłową decyzję (na 95%), to testujemy kolejną hipotezę i wtedy prawdopodobieństwo podjęcia dwóch prawidłowych decyzji pod rząd to już <span class="math inline">\(95% \times 95% = 90,25%\)</span>, a zatem prawdopodobieństwo przynajmniej jednej pomyłki to <span class="math inline">\(1-90,25%\)</span>, czyli już prawie 10%. Działa to dokładnie na tej samej zasadzie, wg której prawdopodobieństwo wyrzucenia dwóch reszek pod rząd w rzucie ucziwą monetą wynosi <span class="math inline">\(50% \times 50% = 25%\)</span>, a wyrzucenie przynajmniej jednego orła <span class="math inline">\(1-25%=75%\)</span>. Dla większej liczby hipotez prawdopodobieństwo popełnienia przynajmniej jednej pomyłki to:</p>
+<ul>
+<li>2 hipotezy: <span class="math inline">\(1 - (1-0,05)^2 \approx 0,10\)</span></li>
+<li>3 hipotezy: <span class="math inline">\(1 - (1-0,05)^3 \approx 0,14\)</span></li>
+<li>4 hipotezy: <span class="math inline">\(1 - (1-0,05)^4 \approx 0,19\)</span></li>
+<li>…</li>
+<li>10 hipotez: <span class="math inline">\(1- (1-0,05)^10 \approx 0,40\)</span></li>
+</ul>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1 class="unnumbered"></h1>
-
+<div class="box">
+<p><strong>NIEETYCZNE PRAKTYKI ZWIĄZANE Z TESTOWANIEM HIPOTEZ</strong></p>
+<ul>
+<li>Harking - “hypotheses after results are known”: realizujemy olbrzymie badanie z wieloma zmiennymi, nie stawiamy żadnych hipotez, analizujemy różne pary zmiennych i następnie raportujemy w artykule tylko te hipotezy, dla których przekroczony został próg statystycznej istotności tak, jakbyśmy realizowali badanie, które miało na celu przetestowanie tych właśnie hipotez.</li>
+<li>p-hacking - otrzymujemy nieistotny statystycznie wynik, ale dzielimy próbę na podgrupy i kombinujemy tak długo, aż zanajdziemy taki podział, dla którego interesująca nas różnica stanie się istotna.</li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="lab00.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="hipotezy-w-badaniach-kliniczno-kontrolnych.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="przedziały-ufności-dla-or-i-rr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

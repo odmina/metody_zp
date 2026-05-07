@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="Metody badań naukowych w zdrowiu publicznym" />
+  <title>6.3 Hipotezy w badaniach kliniczno-kontrolnych | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="6.3 Hipotezy w badaniach kliniczno-kontrolnych | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="6.3 Hipotezy w badaniach kliniczno-kontrolnych | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="6.3 Hipotezy w badaniach kliniczno-kontrolnych | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="lab00.html"/>
+<link rel="prev" href="hipotezy-w-badaniach-kohortowych.html"/>
+<link rel="next" href="testowanie-hipotez.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -208,23 +208,46 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Metody badań naukowych w zdrowiu publicznym</h1>
-<h2 class="subtitle"><em>Materiały z zajęć</em></h2>
-<p class="author"><em>Małgorzata Basińska</em></p>
-<p class="date"><em>2026-05-07</em></p>
-</div>
-<div id="section" class="section level1 unnumbered">
-<h1 class="unnumbered"></h1>
-
+<div id="hipotezy-w-badaniach-kliniczno-kontrolnych" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Hipotezy w badaniach kliniczno-kontrolnych<a href="hipotezy-w-badaniach-kliniczno-kontrolnych.html#hipotezy-w-badaniach-kliniczno-kontrolnych" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>W badaniu kliniczno-kontrolnym to badacz decyduje o tym, ile osób, u których wystąpił interesujący go rezultat (przypadków) zostanie objętych badaniem i ile osób zostanie dobranych do grupy kontrolnej. Nie jest więc możliwe oszacowanie ryzyka bezwzględnego. W rezultacie nie możemy posłużyć się ryzykiem względnym jako miarą związku między ekspozycją (narażeniem) a wystąpieniem rezultatu.</p>
+<p>W tej sytuacji posługujemy się pojęciem szansy i <strong>ilorazem szans</strong>.</p>
+<p><span class="math display">\[OR = \frac{szansa_{narazeni}}{szansa_{nienarazeni}} =
+\frac{\frac{\textit{liczba przypadków (osób, u których wystąpił rezultat) wśród narażonych}}{\textit{liczba osób z grupy kontrolnej wśród narażonych}}}{\frac{\textit{liczba przypadków (osób, u których wystąpił rezultat) wśród NIEnarażonych}}{\textit{liczba osób z grupy kontrolnej wśród NIEnarażonych}}}\]</span></p>
+<p>Np. wyobrażmy sobie, że w naszym badaniu postawiliśmy hipotezę głoszącą, że szansa wystąpienia zaburzeń odżywiania jest większa w przypadku dziewcząt, których matki cierpiały z powodu zaburzeń odżywiania. Zrekrutowaliśmy do badania dziewczęta, u których występują zaburzenia odrzywiania. W grupie kontrolnej znalazły się podobne do nich pod względem demograficznym dziewczęta bez zaburzeń odżywiania. Dla każdej z dziewcząt, zarówno w grupie badanej, jak i w grupie kontrolnej ustaliliśmy, czy zaburzenia odżywiania wystąpiły u jej matki.</p>
+<p><img src="img/tk7.png" style="width:70.0%" /></p>
+<p>Dla powyższych (fikcyjnych) danych:</p>
+<ul>
+<li>szansa wystąpienia zaburzeń odżywiania u córek matek z zaburzeniami odżywiania (narażonych): <span class="math inline">\(20/5 = 4\)</span></li>
+<li>szansa wystąpienia zaburzeń odżywiania u córek matek bez zaburzeń odżywiania (nienarażonych): <span class="math inline">\(65/80 = 0.8125\)</span></li>
+<li>iloraz szans: <span class="math inline">\(4/0.8125 = 4.92\)</span></li>
+<li>szansa wystąpienia zaburzeń odżywiania u córki jest 4,92 raza większa, jeżeli u matki zdiagnozowano zaburzenia odżywiania.</li>
+</ul>
+<p>Spróbujmy liczyć w odwrotnej kolejności - ma to sens, ponieważ w badaniach kiliniczno - kontrolnych ustalamy liczebność obydwu badanych grup, a następnie sprawdzamy status narażenia:
+- szansa wystąpienia zaburzeń odżywiania u matek dzieci z grupy klinicznej (przypadki): <span class="math inline">\(20/65 = 0.3076923\)</span>
+- szansa wystąpienia zaburzeń odżywiania u matek dzieci z grupy kontrolnej: <span class="math inline">\(5/80 = 0.0625\)</span>
+- iloraz szans <span class="math inline">\(0.3076923/0.0625=4.92\)</span> - tyle samo, ile</p>
+<p>Nie ważne, czy policzymy iloraz szans dla narażonych vs nienarażonych, czy dla przypadków vs grupy kontrolnej - uzyskamy ten sam wynik!</p>
+<p>Pamiętajcie, że kolejność obliczania można zamienić tylko, jeżeli posługujemy się szansą, w przypadku ryzyka zawsze najpierw liczymy ryzyko bezwzględne, osobno w grupie narażonych i nienarażonych.</p>
+<p>Ilorazem szans możemy posłużyć się również w badaniach kohortowych.</p>
+<p>Interpretacja ilorazu szans jest podobna do interpretacji ryzyka względnego, przy czym “ryzyko” zastępujemy “szansą”:</p>
+<ul>
+<li>OR=10 oznacza, że wystąpienie ekspozycji jest związane z dziesięciokrotnie większą szansą wystąpienia rezultatu</li>
+<li>OR=2 oznacza dwukrotnie większą szansę</li>
+<li>OR=1,7 oznacza szansę większą o 70%</li>
+<li>OR=1,2 oznacza szansę większą o 20%</li>
+<li>OR=0.75 oznacza szansę mniejszą o 25%</li>
+<li>OR=0.6 oznacza szansę mniejszą 0 40%</li>
+</ul>
+<p>Podobnie jak w przypadku ryzyka względnego, wynik 1 oznacza brak związku między ekspozycją (narażeniem) a badanym rezultatem i podobnie jak w przypadku ryzyka względnego musimy ustalić, czy uzyskany przez nas wynik różny od 1 jest istotny statystycznie.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="lab00.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="hipotezy-w-badaniach-kohortowych.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="testowanie-hipotez.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

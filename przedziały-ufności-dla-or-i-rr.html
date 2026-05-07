@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="Metody badań naukowych w zdrowiu publicznym" />
+  <title>6.5 Przedziały ufności dla OR i RR | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="6.5 Przedziały ufności dla OR i RR | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="6.5 Przedziały ufności dla OR i RR | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="6.5 Przedziały ufności dla OR i RR | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="lab00.html"/>
+<link rel="prev" href="testowanie-hipotez.html"/>
+<link rel="next" href="refs.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -208,23 +208,26 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Metody badań naukowych w zdrowiu publicznym</h1>
-<h2 class="subtitle"><em>Materiały z zajęć</em></h2>
-<p class="author"><em>Małgorzata Basińska</em></p>
-<p class="date"><em>2026-05-07</em></p>
+<div id="przedziały-ufności-dla-or-i-rr" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Przedziały ufności dla OR i RR<a href="przedziały-ufności-dla-or-i-rr.html#przedziały-ufności-dla-or-i-rr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Informacja o tym, że między ekspozycją a rezultatem istnieje statystycznie istotna zależność jest interesująca, ale jednocześnie nie dostarcza nam informacji o tym, jaki “margines błędu” towarzyszy uzyskanym wynikom, np. o ile niższy niż uzyskany w naszym badaniu może być w rzeczywistości iloraz szans?</p>
+<p>Co prawda matematyczne detale bedą się różnić, jednak przedziały ufności dla OR i RR działają tak samo, jak przedziały ufności dla średnich. Jeżeli celem badania jest oszacowanie OR lub RR w interesującej nas populacji, to przedział ufności o poziomie ufności <span class="math inline">\(1 - \alpha\)</span> to taki przedział wokół uzyskanego w badaniu OR lub RR, że gdybyśmy powtarzali nasze badanie wieloktornie, za każdym razem losując nową próbę i określając przedział ufności, to statystycznie <span class="math inline">\(1 - \alpha\)</span> przedziałów zawierałoby wartość RR lub OR charakteryzującą naszą populację (możemy powiedzieć, że <span class="math inline">\(1- \alpha\)</span> przedziałów zawierałoby “prawdziwą” wartość).</p>
+<p>Przedziały ufności wokół RR i OR możecie uzyskać, posługując się pakietami statystycznymi. Jeżeli przedział ufności dla OR nie zawiera 1, to możemy mówić o tym, że między ekspozycją a rezultatem istnieje związek.</p>
+<p>Występująca w powyższym opisie <span class="math inline">\(\alpha\)</span> odpowiada przyjmowanemu podczas testowania hipotez poziomowi istotności. Wyobraźcie sobie, że testujecie hipotezę dotyczącą związku między ekspozycją a rezultatem i przyjmiecie poziom istotności <span class="math inline">\(\alpha\)</span>. Jednocześnie szacujecie <span class="math inline">\(1-\alpha\)</span> przedział ufności. W praktyce istotnemu statystycznie wynikowi będzie towarzyszył przedział ufności dla OR i RR, który nie zawiera 1. Wyjątek mogą stanowić sytuacje, w których uzyskujemy wynik na granicy statystycznej istotności.</p>
+<p>Podobnie jak w przypadku średniej im więcej badanych osób, tym lepsze oszacowanie wartości OR lub RR w populacji i tym węższy przedział ufności. Zwykle podaje się 95% przedziały ufności, jednak jeżeli z jakiegoś powodu przyjmiecie 99% poziom ufności, to przedział stanie się szerszy. Jeżeli uznacie za wsystarczający mniej restrykcyjny poziom ufności, np. 90%, to przedział stanie się węższy.</p>
+<div class="box">
+<p>PODAWANIE PRZEDZIAŁU UFNOŚCI DLA UZYSKANEGO WYNIKU JEST W TEJ CHWILI PRAKTYKĄ WYMAGANĄ W RENOMOWANYCH CZASOPISMACH I ŚWIADCZY O ŚWIADOMOŚCI METODOLOGICZNEJ BADACZA. <strong>ZAWSZE PODAWAJCIE PRZEDZIAŁ UFNOŚCI!</strong></p>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1 class="unnumbered"></h1>
 
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="lab00.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="testowanie-hipotez.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="refs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -71,9 +71,9 @@ lab05_standaryzacja
 lab05_normy
 lab05_korzystanie
 lab05_zadanie
-hipotezy-i-analiza-danych-w-badaniach-kohortowych-oraz-kliniczno-kontrolnych.-iloraz-szans.-ryzyko-względne
-co-to-jest-hipoteza
-hipotezy-w-badaniach-kohortowych
-hipotezy-w-badaniach-kliniczno-kontrolnych
-testowanie-hipotez
-przedziały-ufności-dla-or-i-rr
+lab06
+lab06_hipo
+lab06_hipo_cohort
+lab06_hipo_cc
+lab06_hipo_test
+lab06_ci_or_rr

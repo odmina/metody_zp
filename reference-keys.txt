@@ -78,7 +78,7 @@ lab06_hipo_cc
 lab06_hipo_test
 lab06_ci_or_rr
 lab07
-zmienne-niezależne-i-zależne
-związek-między-zmienną-kategorialną-a-ilościową
+zmienne-niezależne-i-zależne-llab07_zmienne
+związek-między-zmienną-kategorialną-a-ilościową-llab07_kat_il
 testowanie-hipotez
-związek-między-dwoma-zmiennymi-ilościowymi
+związek-między-dwoma-zmiennymi-ilościowymi-llab07_il_il

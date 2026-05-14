@@ -82,3 +82,6 @@ lab07_zmienne
 lab07_kat_il
 testowanie-hipotez
 lab07_il_il
+liniowy-związek-między-zmiennymi
+nieliniowy-związek-między-zmiennymi
+regresja-liniowa

@@ -235,7 +235,7 @@ div.csl-indent {
 <p>Może zdarzyć się tak, że wykres rozrzutu będzie pokazywał, że związek między analizowanymi zmiennymi nie jest liniowy. Nie powinniście wtedy obliczać <span class="math inline">\(r\)</span> Pearsona, ponieważ oszacujecie siłę związku niewłaściwie (może być zaniżona albo zawyżona). Jeżeli jednocześnie dla wszystkich przedziałów wartości zmiennej niezależnej związek ma ten sam kierunek, tzn. korelacja zawsze jest dodatnia albo zawsze ujemna, możemy posłużyć się innymi współczynnikami korelacji (<span class="math inline">\(\rho\)</span> Spearmana lub <span class="math inline">\(\tau\)</span> Kendalla; również przyjmują one wartości od -1 do 1 i im silniejszy związek, tym większa wartość bezwzględna współczynnika). Podczas obliczania tych współczynników obserwacje są rangowane (innymi słowy, dla każdej obserwacji określa się jej pozycję w rankingu). Rangowe współczynniki korelacji możemy policzyć np. dla danych o takim kształcie:</p>
 <p><img src="img/correlations_nonlinear_simple.png" /></p>
 <p>Nie powinniśmy natomiast liczyć współczynników korelacji, jeżeli dla jakiegoś przedziału zależność jest dodatnia, a dla innego ujemna - uzyskany współczynnik korelacji będzie bardzo mylący. Np. chyba nie muszę przekonywać Was, że zależność widoczna na obrazku po lewej stronie jest dosyć silna - jeżeli znamy wartość <span class="math inline">\(x\)</span>, to dosyć dokładnie możemy przewidzieć <span class="math inline">\(y\)</span>. Jednocześnie współczynnik korelacji jest bliski zeru! Dla porównania po prawej stronie przedstawione są dane, w przypadku których rzeczywiście zachodzi zależność liniowa i obliczony współczynnik korelacji ma podobną wartość:</p>
-<p><img src="img/cor_monotonic.png" /></p>
+<p><img src="img/cor_nonmonotonic.png" /></p>
 <div class="box">
 <p><strong>BARDZO WAŻNY WNIOSEK</strong></p>
 <p>Kiedy analizujesz dane ilościowe, <strong>zawsze</strong> przedstawiaj je na wykresie!</p>
@@ -260,6 +260,7 @@ div.csl-indent {
 <p><strong>WAŻNE</strong></p>
 <p>Nie przeprowadzaj regresji liniowej, jeżeli zależność między zmiennymi nie jest liniowa. Jest wiele powodów natury statystycznej, żeby tego nie robić, ale jest również jeden zdroworozsądkowy powód - nie ma to sensu :)</p>
 </div>
+<p><strong>TEMAT 8 NADCHODZI!</strong></p>
 
 </div>
 </div>

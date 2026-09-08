@@ -85,3 +85,11 @@ lab07_il_il
 liniowy-związek-między-zmiennymi
 nieliniowy-związek-między-zmiennymi
 regresja-liniowa
+interpretacja-równania-regresji-liniowej
+regresja---więcej-możliwości
+lab08
+lab08_randomizacja
+przykład-i-hip-study
+przykład-ii-paradoks-simpsona
+lab08_confounder
+lab08_bradford_hill

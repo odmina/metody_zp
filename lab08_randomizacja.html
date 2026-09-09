@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym</title>
-  <meta name="description" content="2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym" />
+  <title>8.1 Rola ranodmizacji | Metody badań naukowych w zdrowiu publicznym</title>
+  <meta name="description" content="8.1 Rola ranodmizacji | Metody badań naukowych w zdrowiu publicznym" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym" />
+  <meta property="og:title" content="8.1 Rola ranodmizacji | Metody badań naukowych w zdrowiu publicznym" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.2 Jak scharakteryzować zbadaną próbę | Metody badań naukowych w zdrowiu publicznym" />
+  <meta name="twitter:title" content="8.1 Rola ranodmizacji | Metody badań naukowych w zdrowiu publicznym" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="lab02_rodzaje.html"/>
-<link rel="next" href="lab03.html"/>
+<link rel="prev" href="lab08.html"/>
+<link rel="next" href="lab08_confounder.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -234,82 +234,144 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab02_charakterystyka" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Jak scharakteryzować zbadaną próbę<a href="lab02_charakterystyka.html#lab02_charakterystyka" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="lab02_charakterystyka_ilosc" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Statystyki opisowe dla zmiennych ilościowych<a href="lab02_charakterystyka.html#lab02_charakterystyka_ilosc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="średnia-arytmetyczna-i-odchylenie-standardowe" class="section level4 hasAnchor" number="2.2.1.1">
-<h4><span class="header-section-number">2.2.1.1</span> Średnia (arytmetyczna) i odchylenie standardowe<a href="lab02_charakterystyka.html#średnia-arytmetyczna-i-odchylenie-standardowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="lab08_randomizacja" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Rola ranodmizacji<a href="lab08_randomizacja.html#lab08_randomizacja" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Randomizacja to losowy podział osób badanych na grupę badaną i grupę kontrolną, jaki przeprowadza się w badaniach eksperymentalnych. Nie mylcie jej z losowym doborem próby! W omawianym poniżej badaniu HIP te dwa procesy (doboru próby i randomizacji) rzeczywiście przebiegały równocześnie. W tym konkretnym przypadku dobór próby był losowy, dlatego nie ma większego znaczenia, czy dobierzemy z populacji losowo osobno grupę badaną i grupę kontrolną, czy też najpierw wylosujemy wszystkich badanych i następnie losowo podzielimy ich na grupy - efekt będzie zbliżony. Istotą randomizacji jest to, każdy uczestnik badania miał taką samą szansę znalezienia się w grupie badanej i w grupie kontrolnej. W sytuacji, w której w badaniu biorą udział ochotnicy (a więc dobór osób do badania z całą pewnością nie jest losowy) również możemy przeprowadzić randomizację. Po prostu każdego ochotnika przydzielamy do jednej z grup korzystając z losowej procedury, przypominającej rzut monetą (w praktyce te procedury są nieco bardziej skomplikowane).</p>
+<p>Celem randomizacji jest to, by grupa badana i grupa kontrolna były takie same, tzn. by nie różniły się od siebie pod względem żadnej zmiennej, która mogłaby kształtować badany rezultat. Wtedy jedynym, co różni grupy jest to, że jedna została poddana zaplanowanej przez badacza interwencji, a druga - nie. Jeżeli po interwencji grupy różnią się poziomem rezultatu, to całą tę różnicę możemy przypisać interwencji badacza.</p>
+<div id="przykład-i-hip-study" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Przykład I: HIP Study<a href="lab08_randomizacja.html#przykład-i-hip-study" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Badanie HIP było pierwszym, randomizowanym, kontrolowanym badaniem klinicznym, w którym oceniano skuteczność mammograficznych badań przesiewowych w kierunku raka piersi. Spośród kobiet w wieku 40-64 lat, które były zapisane do Health Insurance Plan (HIP), wylosowano kilkadziesiąt tysięcy kobiet, którym zaoferowano screening i taką samą liczbę kobiet do grupy kontrolnej, której nie oferowano screeningu. Poniższa tabela pokazuje śmiertelność (na 1000 kobiet) na jednym z etapów HIP study (wyniki cytowane za<span class="citation"><sup><a href="#ref-freedman2009statistical">3</a></sup></span>):</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Grupa</th>
+<th align="center">Liczebność</th>
+<th align="center">Śmiertelność - rak piersi</th>
+<th align="center">Śmiertelność - inne</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Grupa badana</strong></td>
+<td align="center">31 000</td>
+<td align="center">1.3</td>
+<td align="center">27</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Grupa kontrolna</strong></td>
+<td align="center">31 000</td>
+<td align="center">2.0</td>
+<td align="center">28</td>
+</tr>
+</tbody>
+</table>
+<p>Widzimy, że śmiertelność w wyniku raka piersi była 0 35% niższa w grupie badanej niż w grupie kontrolnej (wynik był istotny statystycznie). To dowód na to, że program screeningu przyniósł eczekiwane efekty. Jednocześnie śmiertelność z pozostałych przyczyn pozostawała na zbliżonym poziomie w obydwu grupach (różnica wynosi w tym przypadku niecałe 4%). Dane o śmiertelności z pozostałych przyczyn sugerują, że randomizacja zadziałała prawidłowo i rzeczywiście stan zdrowia kobiet, którym zaoferowano screening był zbliżony do stanu zdrowia kobiet, którym screeningu nie zaoferowano, a zatem obserwowany efekt możemy przypisać programowi <strong>oferowania</strong> wykonania badania mammograficznego.</p>
+<p>Możecie się spodziewać, że nie każda kobieta, której zaoferowano screening, zgodziła się mu poddać. Macie rację! Warto przyjrzeć się wynikom w grupie badanej w podziale na kobiety, które zgodziły się poddać mammografii i te, które się nie zgodziły:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Grupa</th>
+<th align="center">Liczebność</th>
+<th align="center">Śmiertelność - rak piersi</th>
+<th align="center">Śmiertelność - inne</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Grupa eksperymentalna - ogółem</strong></td>
+<td align="center">31 000</td>
+<td align="center">1.3</td>
+<td align="center">27</td>
+</tr>
+<tr class="even">
+<td align="left">Zgoda na screening</td>
+<td align="center">20 200</td>
+<td align="center">1.1</td>
+<td align="center">21</td>
+</tr>
+<tr class="odd">
+<td align="left">Brak zgody na screening</td>
+<td align="center">10 800</td>
+<td align="center">1.5</td>
+<td align="center">38</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Grupa kontrolna</strong></td>
+<td align="center">31 000</td>
+<td align="center">2.0</td>
+<td align="center">28</td>
+</tr>
+</tbody>
+</table>
+<p>W grupie, która zgodziła się na wykonanie mammografii śmiertelność w wyniku raka piersi wynosiła 1.1/1000, natomiast w grupie, która się nie zgodziła, wynosiła 1.5/1000. Nie możemy jednak na tej podstawie stwierdzić, że wykonanie mammografii chroni przed rakiem piersi! Podział nastąpił w tym przypadku w oparciu o chęć pacjentek. Dane o śmiertelności z innych przyczyn wskazują, że pacjentki, które chciały się poddać mammografii różniły się znacznie od pacjentek, które nie chciały tego zrobić. Śmiertelność z innych przyczyn w grupie bez mammografii była prawie dwa razy większa! A zatem nie możemy obserwowanej różnicy w śmiertelności w wyniku raka piersi przypisać wykonaniu mammografii. Każdy mógłby nam zarzucić, że kobiety, które poddały się mammografii po otrzymaniu zaproszenia były po prostu zdrowsze (udział w badaniach jest jedną z form dbania o zdrowie), a to, co spowodowało różnicę między grupą eksperymentalną a kontrolną, to nie samo wykonanie mammografii, tylko np. wzrost świadomości, który nastąpił po otrzymaniu zaproszenia. Nie twierdzę, że tak było, ale gdyby ktoś chciał podważyć wniosek postawiony w oparciu o porównanie grup ze zgodą na screening i bez, to bez problemu mógłby to zrobić.</p>
 <div class="box">
-<p>Załóżmy, że mamy następujący <span class="math inline">\(n\)</span> elementowy zbiór <span class="math inline">\(X = {3, 5, 7, 9, 1, 3}\)</span>. Każdy z elementów tego zbioru można oznaczyć symbolem <span class="math inline">\(x_i\)</span>, gdzie <span class="math inline">\(i\)</span> mieści się w zakresie od <span class="math inline">\(1\)</span> do <span class="math inline">\(n\)</span>, a więc: <span class="math inline">\(x_1 = 3, x_2=5, x_3=7\)</span> itd.</p>
-<p>Wyrażenie <span class="math inline">\(\sum_{i=1}^{n} x_i\)</span> będzie oznaczało sumę wszystkich elementów zbioru <span class="math inline">\(X\)</span>.</p>
-<p>Z kolei wyrażenie <span class="math inline">\(\sum_{i=1}^{n} x_i^2\)</span> będzie oznaczało sumę kwadratów wszystkich elementów zbioru <span class="math inline">\(X\)</span>.</p>
-<p>Po operatorze sumowania <span class="math inline">\(\sum_{i=1}^{n}\)</span> możemy wpisać dowolne działanie. Będzie to oznaczało “weź każdy z elementów zbioru <span class="math inline">\(X\)</span> osobno, wykonaj na nim podane po operatorze sumowania działanie i dodaj wszystkie wyniki tych działań.”</p>
-</div>
-<p>Dla każdego zbioru obserwacji zmiennej ilościowej, możemy obliczyć średnią wartość obserwacji, tzw. Średnią z próby (średnią dla zbadanych osób) będziemy oznaczać symbolem <span class="math inline">\(\bar{x}\)</span>. Wzór:</p>
-<p><span class="math display">\[\bar{x}= \frac{1}{n}\sum_{i=1}^{n} x_i.\]</span></p>
-<p><strong>Średnia</strong> ma kilka ciekawych właściwości. Po pierwsze, jeżeli obliczycie średnią dla danego zbioru obserwacji, to nie ma gwarancji, że wartość średnia znajduje się wśród zaobserwowanych wartości (jak w powiedzeniu: “ja i mój pies mamy średnio trzy nogi”). Jednocześnie jeżeli obliczycie sumę odległości poszczególnych obserwacji od średniej i od jakiejś innej wartości, to suma odległości obserwacji od średniej zawsze będzie mniejsza! Dla zmiennych dyskretnych, jeżeli pomyślicie, że każda z obserwacji jest cegiełką i postawicie tę cegiełkę w miejscu odpowiadającym wartości obserwacji na osi liczbowej, to jeżeli podniesicie oś z cegiełkami i oprzecie ją na czubku palca w miejscu odpowiadającym średniej, to oś będzie w równowadze. Dla zmiennych ciągłych zaobserwujemy podobne zjawisko, ale kostrukcja równoważni będzie nieco bardziej skomplikowana (dla zainteresowanych: będzie wymagała posłużenia się matematycznym formalizmem odnoszącym się do zmiennych losowych).</p>
-<p><strong>Odchylenie standardowe</strong> to miara rozproszenia wartości zmiennej wokół średniej. Będziemy oznaczać je symbolem <span class="math inline">\(s\)</span>. By obliczyć odchylenie standardowe, będziemy korzystać z następującego wzoru<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>:</p>
-<p><span class="math display">\[s = \sqrt{\frac{1}{n-1}(\sum_{i=1}^{n}x_i - \bar{x})^2}.\]</span></p>
-<p>Odchylenie standardowe to pierwiastek z wariancji. W porównaniu do wariancji ma tę zaletę, że jest wyrażone w tych samych jednostkach, co wartości naszej zmiennej (np. w metrach a nie metrach<span class="math inline">\(^2\)</span>$, jeżeli interesuje nas wzrost) i łatwiej je intepretować.</p>
-<p>Gdy liczycie odchylenie standardowe, możecie skorzystać z następującej procedury:</p>
-<ol style="list-style-type: decimal">
-<li>Liczymy średnią dla naszych obserwacji.</li>
-<li>Od każdej obserwacji odejmujemy uzyskaną w punkcie 1. średnią.</li>
-<li>Wyniki operacji z poprzedniego punktu podnosimy do kwadratu (każdy wynik osobno).</li>
-<li>Sumujemy obserwacje pomniejszone o średnią i podniesione do kwadratu (czyli sumujemy wyniki operacji z punktu 3.).</li>
-<li>Uzyskaną sumę dzielimy przez liczbę obserwacji pomniejszoną o 1 (<span class="math inline">\(n-1\)</span>). Otrzymaliśmy wariancję.</li>
-<li>Wyciągamy pierwiastek kwadratowy z uzyskanej wartości (wariancji).</li>
-</ol>
-</div>
-<div id="mediana-i-rozstęp-ćwiartkowy" class="section level4 hasAnchor" number="2.2.1.2">
-<h4><span class="header-section-number">2.2.1.2</span> Mediana i rozstęp ćwiartkowy<a href="lab02_charakterystyka.html#mediana-i-rozstęp-ćwiartkowy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><strong>Mediana</strong>, podobnie jak średnia, jest miarą centralnej tendencji obecnej w zbiorze danych, można również powiedzieć, że jest wartością środkową. Jest to wartość poniżej i powyżej której znajduje się dokładnie połowa obserwacji. By określić medianę, musimy uporządkować wartości od najmniejszej do największej. Np. dla obserwacji wzrostu <span class="math inline">\({1,62, 1,69, 1,69, 1,72, 1,74, 1,75, 1,78}\)</span> medianą będzie wartość <span class="math inline">\(1,72\)</span>. Jeżeli liczba obserwacji będzie parzysta, by określić medianę musimy obliczyć średnią z dwóch środkowych obserwacji, np. dla obserwacji <span class="math inline">\({1,62, 1,69, 1,69, 1,72, 1,74, 1,75, 1,77, 1,78}\)</span> mediana będzie wynosić <span class="math inline">\(1,72 + 1,74=1,73\)</span>.</p>
-<p><strong>Rozstęp ćwiartkowy</strong> jest miarą rozproszenia danych. Mówi, jak dużą rozpiętość ma zakres wartości, w którym mieści się środkowe 50% obserwacji, czyli dwie środkowe ćwierci (25% obserwacji), jedna poniżej, a druga powyżej mediany. By obliczyć rozstęp ćwiartkowy, musimy uporządkować wartości od najmniejszej do największej. Następnie musimy wyznaczyć pierwszy oraz trzeci kwartyl. Pierwszy kwartyl to taka wartość, poniżej której mieści się 25% obserwacji, natomiast trzeci kwartyl, to wartość poniżej której mieści się 75% obserwacji. Rozstęp ćwiartkowy uzyskujemy po odjęciu pierwszego kwartyla od trzeciego kwartyla.</p>
-<div class="float">
-<img src="img/iqr.png" alt="Mediana i rozstęp ćwiartkowy" />
-<div class="figcaption">Mediana i rozstęp ćwiartkowy</div>
+<p>HIP Study jako dobry przykład obrazujący rolę randomizacji, zaczerpnęłam z wykładu prof. Caroline Uhler, odbywającego się w ramach kursu <a href="https://www.edx.org/learn/data-analysis/massachusetts-institute-of-technology-data-analysis-statistical-modeling-and-computation-in-applications?index=rv_product_summary&amp;queryId=94af93bf678a013d7fb6ef6721b1cf83&amp;position=1">“Data Analysis: Statistical Modeling and Computation in Applications”</a>, oferowanego na platformie <a href="edx.org">edx.org</a>.</p>
 </div>
 </div>
-<div id="moda-dominanta" class="section level4 hasAnchor" number="2.2.1.3">
-<h4><span class="header-section-number">2.2.1.3</span> Moda (dominanta)<a href="lab02_charakterystyka.html#moda-dominanta" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><strong>Moda</strong>, inaczej zwana <strong>dominantą</strong>, to wartość najczęściej występująca w zbiorze obserwacji. Jeżeli np. mamy następujące obserwacje tego, ile osoby badane mają dzieci: <span class="math inline">\({1, 0, 0, 1, 1, 2, 2, 3, 1, 2, 1, 2, 4}\)</span> to moda będzie wynosiła 1.</p>
+<div id="przykład-ii-paradoks-simpsona" class="section level3 hasAnchor" number="8.1.2">
+<h3><span class="header-section-number">8.1.2</span> Przykład II: paradoks Simpsona<a href="lab08_randomizacja.html#przykład-ii-paradoks-simpsona" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Spójrzcie na poniższą tabelę, przedstawiającą liczbę i odsetek tych, u których leczenie zakończyło się sukcesem (w stosunku do wszystkich poddanych leczeniu). Odpowieddzie na pytanie: które leczenie jest bardziej skuteczne?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center">Leczenie A</th>
+<th align="center">Leczenie B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ogółem</td>
+<td align="center">78% (273/350)</td>
+<td align="center"><strong>83% (289/350)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Na pierwszy rzut oka bardziej skuteczne jest leczenie B. Powyższe dane pochodzą z autentycznego artykułu dotyczącego nowej metody leczenia kamieni nerkowych (Charig, C. R., Webb, D. R., Payne, S. R., &amp; Wickham, J. E. (1986). Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy. BMJ, 292(6524), 879–882. <a href="https://doi.org/10.1136/bmj.292.6524.879" class="uri">https://doi.org/10.1136/bmj.292.6524.879</a>). Nowa metoda to metoda B.</p>
+<p>Spójrzcie jednak na drugą tabelę:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center">Leczenie A</th>
+<th align="center">Leczenie B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Małe kamienie</td>
+<td align="center"><strong>93% (81/87)</strong></td>
+<td align="center">87% (234/270)</td>
+</tr>
+<tr class="even">
+<td align="left">Duże kamienie</td>
+<td align="center"><strong>73% (192/263)</strong></td>
+<td align="center">69% (55/80)</td>
+</tr>
+<tr class="odd">
+<td align="left">Ogółem</td>
+<td align="center">78% (273/350)</td>
+<td align="center"><strong>83% (289/350)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Zarówno w przypadku małych kamieni, jak i dużych kamieni skuteczniejsze jest stare leczenie A! Jak zatem doszło do tego, że odsetki wyleczonych ogółem wskazują na to, że skuteczniejsze jest leczenie B? Podział na grupy z leczeniem A lub B nie był losowy! To, w której grupie ktoś się znalazł zależało od tego, jak ciężki do wyleczenia był jego przypadek i w grupie z nowym leczeniem B znalazły się lżejsze przypadki. Zwróćcie uwagę, że odsetek wyleczonych jest wyższy w przypadku małych kamieni, niezależnie od metody leczenia, a zatem małe kamienie wyleczyć łatwiej.</p>
+<p>Paradoks Simpsona pokazuje dobitnie, że kiedy nie stosujemy randomizacji, nie mamy żadnej gwarancji, że porównując rezultaty w dwóch grupach będziemy mogli przypisać obserwowaną różnicę przeprowadzonej interwencji.</p>
 </div>
-<div id="prezentacja-graficzna" class="section level4 hasAnchor" number="2.2.1.4">
-<h4><span class="header-section-number">2.2.1.4</span> Prezentacja graficzna<a href="lab02_charakterystyka.html#prezentacja-graficzna" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><em>(będzie na następnych zajęciach)</em></p>
 </div>
+<h3>Bibliografia<a href="refs.html#refs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body">
+<div id="ref-freedman2009statistical" class="csl-entry">
+<div class="csl-left-margin">3 </div><div class="csl-right-inline">Freedman D. Statistical models: <span>Theory</span> and practice. Cambridge University Press, 2009.</div>
 </div>
-<div id="lab02_charakterystyka_kat" class="section level3 hasAnchor" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Statystyki opisowe dla zmiennych kategorialnych<a href="lab02_charakterystyka.html#lab02_charakterystyka_kat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="zmienne-porządkowe" class="section level4 hasAnchor" number="2.2.2.1">
-<h4><span class="header-section-number">2.2.2.1</span> Zmienne porządkowe<a href="lab02_charakterystyka.html#zmienne-porządkowe" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Dla zmiennych porządkowych <strong>możemy określić medianę i rozstęp ćwiartkowy</strong> (dokładnie tak samo jak dla zmiennych ilościowych: <a href="lab02_charakterystyka.html#mediana-i-rozstęp-ćwiartkowy">Mediana i rozstęp ćwiartkowy</a>).</p>
-<p>W przypadku zmiennych porządkowych podawanie średniej nie ma sensu. Po pierwsze, w przypadku zmiennych porządkowych takich jak wykształcenie określane przy pomocy kategorii “podstawowe”, “zawodowe” itd. trudno wyobrazić sobie, co miałaby oznaczać średnia, szczególnie jeżeli np. “wypadnie” nam pomiędzy wykształceniem średnim a wyższym lub zawodowym a średnim. Poza tym nie wiemy, w jaki sposób przypisać wartości liczbowe, które będziemy uśredniać - czy kolejnym poziomom wykształcenia powinny odpowiadać liczby <span class="math inline">\(1,2,3\)</span> i <span class="math inline">\(4\)</span>? Czy też np. <span class="math inline">\(8, 11, 12, 15\)</span>, odpowiadające mniej-więcej liczbie lat edukacji aż do uzyskania danego poziomu? Jest to arbitralna decyzja i dlatego średnia nie ma większego sensu.</p>
-<p>Podobnie jak w przypadku wykształcenia nie ma sensu uśrednianie odpowiedzi na skali od 1 do 5, gdzie kolejne stopnie skali oznaczają np. “bardzo niezadowolony”, “raczej niezadowolony”, “ani niezadowolony, ani zadowolony”, “raczej zadowolony” oraz “bardzo zadowolony”. Nawet w przypadku, gdy poprosimy badanych po prostu o wskazanie, jak bardzo są zadowoleni na skali od 1 do 5 (lub od 1 do 7, albo od 1 do 10) w gruncie rzeczy nie wiemy, co badany myślał, gdy zaznaczał dany stopień skali. Dla każdego badanego może on oznaczać coś nieco innego (dlatego warto opisywać wszystkie stopnie!), a co gorsza może być tak, że badany dla większości swoich doświadczeń zaznaczy 6 lub 7, stopień piąty zignoruje, by ocenić zadowolenie na 4 będzie musiał doświadczyć czegoś naprawdę nieprzyjemnego, a kolejne niższe stopnie będą rzadko używane. Inna osoba może wyobrazić sobie tę skalę zupełnie inaczej. Jeżeli mamy jedno takie pytanie i policzymy średnią dla naszych obserwacji, trudno będzie powiedzieć, co oznacza taka średnia.</p>
-<p>Nic nie stoi na przeszkodzie, byśmy dla zmiennej porządkowej określili również <strong>modę</strong> oraz podali, jaki odsetek badanych wskazał każdą z możliwych odpowiedzi.</p>
-</div>
-<div id="zmienne-nominalne" class="section level4 hasAnchor" number="2.2.2.2">
-<h4><span class="header-section-number">2.2.2.2</span> Zmienne nominalne<a href="lab02_charakterystyka.html#zmienne-nominalne" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>W przypadku zmiennych nominalnych możemy podać modę oraz proporcje lub odsetki osób badanych, które należą do każdej z kategorii.</p>
-
-</div>
-</div>
-</div>
-<!-- </div> -->
-<div class="footnotes">
-<hr />
-<ol start="2">
-<li id="fn2"><p>Jeżeli zastanawiacie się, czemu w liczniku ułamka znajdującego się przed operatorem sumowania jest <span class="math inline">\(n-1\)</span> a nie <span class="math inline">\(n\)</span> - słusznie! Wrócimy do tego na następnych zajęciach.<a href="lab02_charakterystyka.html#fnref2" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="lab02_rodzaje.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lab03.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="lab08.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lab08_confounder.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
